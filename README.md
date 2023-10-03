@@ -1,4 +1,4 @@
-# Time Tracker
+# Tiny Time
 
 This is a project to track time spent working on projects.
 
