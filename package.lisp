@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
-(defpackage #:time-tracker
+(defpackage #:tiny-time
   (:use #:cl))
