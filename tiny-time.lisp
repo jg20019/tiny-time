@@ -50,9 +50,11 @@
 
 
 ;;;; SERVER
+(defvar *acceptor* nil)
 
-;;;; TEMPLATES
+(defun start (&key (port 4242))
+  "Start acceptor on given port"
+  (setf *acceptor* (make-instance 'hunchentoot:easy-acceptor :port port))
+  (hunchentoot:start *acceptor*))
 
-;;;; CONTROLLERS
-
-;;;; ROUTES
+(start)
